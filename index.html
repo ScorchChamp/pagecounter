@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <div class="counter" id="counter">
+        </div>
+    </div>
+    <script>
+        var urlParams = new URLSearchParams(window.location.search);
+        var username = urlParams.get('username');
+        fetch('https://counter.scorchchamp.com/counter?username=' + username)
+            .then(response => response.text())
+            .then(data => {
+                data.split('').forEach((element, index) => {
+                    var div = document.createElement('div');
+                    div.className = 'digit';
+                    div.innerHTML = element;
+                    document.getElementById('counter').appendChild(div);
+                });
+            }
+            );
+    </script>
+
+</html>
