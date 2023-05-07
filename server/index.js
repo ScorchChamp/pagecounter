@@ -3,6 +3,9 @@
 const express = require('express');
 const app = express();
 const fs = require('fs');
+const cors = require('cors');
+
+app.use(cors());    
 
 app.get('/counter', (req, res) => {
     const username = req.query.username;
