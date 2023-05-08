@@ -1,4 +1,4 @@
-# Very simple page loader
+# Very simple page visits counter
 
 ![](https://counter.scorchchamp.com/counter?username=ScorchChamp)
 
