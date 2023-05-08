@@ -1,4 +1,7 @@
-# pagecounter
-Count how many times the content has been loaded
+# Very simple page loader
 
-![test](http://localhost:3000/counter?username=123)
+![](https://counter.scorchchamp.com/counter?username=ScorchChamp)
+
+```
+![](https://counter.scorchchamp.com/counter?username=ScorchChamp)
+```
